@@ -1,7 +1,10 @@
+import React from 'react';
+import HomeScreen from './pages/home-screen';
+import BackstoryScreen from './pages/backstory-screen';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
   const PageSwitch = () => (
     <Switch>
         <Route exact path='/' component={HomeScreen} />
@@ -10,28 +13,17 @@ function App() {
         <Route exact path='/upgrades'>
 
         </Route>
-
-  )
     </Switch>
-  }
+  )
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <BrowserRouter>
+      <PageSwitch />
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
 export default App;
