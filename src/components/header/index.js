@@ -14,7 +14,7 @@ const Header = () => {
             </div>
             <div className="data-top-right">
             </div>
-            <div classNAme="hamburger-r">
+            <div className="hamburger-r">
                 <div className="right-screen">
 
                 </div>

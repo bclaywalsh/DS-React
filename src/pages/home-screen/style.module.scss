@@ -1,4 +1,47 @@
 html,
 body {
   text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.animatedIntro {
+  position: absolute;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+#caretaker {
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: caretaker1 4s;
+}
+
+
+@keyframes caretaker1 {
+  0% {opacity: 0; height: 20vh;}
+  5% {opacity: 1;}
+  10% {opacity: 1;}
+  15% {opacity: 0; height: 20vh;}
+  16% {height: 30vh;}
+  20% {opacity: 1;}
+  25% {opacity: 1;}
+  30% {opacity: 0; height: 30vh;}
+  31% {height: 50vh;}
+  35% {opacity: 1;}
+  40% {opacity: 1;}
+  45% {opacity: 0; height: 50vh;}
+  46% {height: 90vh;}
+  50% {opacity: 1;}
+  55% {opacity: 1;}
+  60% {opacity: 0; height: 90vh;}
+  81% {opacity: 0; height: 170vh;}
+  85% {opacity: 1;}
+  95% {opacity: 1;}
+  100% {opacity: 0; height: 170vh;}
 }
