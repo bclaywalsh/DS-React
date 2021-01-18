@@ -3,6 +3,7 @@ body {
   text-align: center;
   background-color: black;
   color: white;
+  padding: 4rem;
 }
 
 .animatedIntro {
@@ -10,38 +11,78 @@ body {
   z-index: 100;
   height: 100vh;
   width: 100vw;
+  top: 0;
+  left: 0;
   background-color: black;
-}
-
-#caretaker {
-  position: absolute;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: caretaker1 4s;
+  animation: blackbg1 9s;
+  opacity: 0;
 }
 
+#caretaker {
+  overflow: hidden;
+  animation: caretaker1 6s;
+  opacity: 0;
+  margin-top: 40vh;
+  width: auto;
+  height: 10vh;
+}
+
+@keyframes blackbg1 {
+  0% {
+    opacity: 1;
+  }
+  68% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 @keyframes caretaker1 {
-  0% {opacity: 0; height: 20vh;}
-  5% {opacity: 1;}
-  10% {opacity: 1;}
-  15% {opacity: 0; height: 20vh;}
-  16% {height: 30vh;}
-  20% {opacity: 1;}
-  25% {opacity: 1;}
-  30% {opacity: 0; height: 30vh;}
-  31% {height: 50vh;}
-  35% {opacity: 1;}
-  40% {opacity: 1;}
-  45% {opacity: 0; height: 50vh;}
-  46% {height: 90vh;}
-  50% {opacity: 1;}
-  55% {opacity: 1;}
-  60% {opacity: 0; height: 90vh;}
-  81% {opacity: 0; height: 170vh;}
-  85% {opacity: 1;}
-  95% {opacity: 1;}
-  100% {opacity: 0; height: 170vh;}
+  0% {
+    opacity: 0.1;
+    height: 20vh;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0;
+    height: 20vh;
+  }
+  26% {
+    opacity: 0;
+  }
+  27% {
+    opacity: 0.2;
+    height: 50vh;
+  }
+  35% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0;
+    height: 50vh;
+  }
+  51% {
+    opacity: 0;
+    height: 170vh;
+  }
+  70% {
+    opacity: 0;
+  }
+  71% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    height: 170vh;
+  }
 }
