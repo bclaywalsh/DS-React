@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import caretaker from './Caretaker_1b.png';
 import dsLogo from './DerelictStarBlue4.png';
-import bgImage from './ATMA_TitleRainbow.png';
+import bgImage from './ATMA_TitleRainbow_FULL.png';
 import style from './style.module.scss';
 
 const HomeScreen = () => {

@@ -11,8 +11,9 @@
 .lightButton {
   position: fixed;
   margin-left: -50px;
-  margin-top: 1vh;
+  margin-top: -2vh;
   transform: scale(0.9);
+  z-index: 51;
 }
 
 .lightButton {

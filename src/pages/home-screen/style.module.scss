@@ -64,17 +64,19 @@ body {
 .bgImage {
   position: absolute;
   overflow: hidden;
-  top: -50%;
-  left: -50%;
-  bottom: -50%;
-  right: -50%;
-  min-width: 100vw;
-  min-height: 100vh;
+  top: -100%;
+  left: -100%;
+  bottom: -100%;
+  right: -100%;
+  min-width: 200vw;
+  min-height: 200vh;
   margin: auto;
 }
 
 .derelictStar {
   margin-top: 2rem;
+  position: relative;
+  z-index: 20;
 }
 
 h5,
