@@ -6,19 +6,15 @@ const Header = () => {
     return (
         <div className="header">
             {/* <img  className="header-back" href=""/> */}
-            <div className="hamburger-l">
-                <div className="left-screen">
-                </div>
-            </div>
-            <div className="data-top-left">
-            </div>
-            <div className="data-top-right">
-            </div>
-            <div className="hamburger-r">
-                <div className="right-screen">
+            <div className={style.backPanel1}></div>
+            <div className={style.backPanel2}></div>
 
-                </div>
-            </div>
+            <div className={style.hamburger1}></div>
+            <div className={style.mobileScreen1}></div>
+
+            <div className={style.hamburger2}></div>
+            <div className={style.mobileScreen2}></div>
+
         </div>
     )
 }
