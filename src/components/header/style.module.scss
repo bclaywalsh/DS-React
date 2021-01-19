@@ -4,12 +4,19 @@
   top: 0;
   left: 0;
   width: 100vw;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-.backPanel1 {
-  height: 20vh;
-  width: 20vw;
-  background-color: gray;
-  border-radius: 30px;
-  border-style: ridge;
+.panel,
+.lightButton {
+  position: fixed;
+  margin-left: -50px;
+  margin-top: 1vh;
+  transform: scale(0.9);
+}
+
+.lightButton {
+  z-index: 52;
+  margin-top: -1.2vh;
+  opacity: 0;
 }
