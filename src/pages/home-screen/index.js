@@ -14,8 +14,8 @@ const HomeScreen = () => {
                 <div className={style.viewBorderBottom}></div>
             </div>
             <img className={style.derelictStar} src={dsLogo} alt="Derelict Star (logo)" />
-            <h3>A world in the making</h3>
-            <p className="scrolling-text" >Derelict Star is a side-scrolling Metroidvania set on a crumbling world
+            <h3>A world in the making<br></br>A world at the edge of destruction</h3>
+            <p className={style.scrollingText} >Derelict Star is a side-scrolling Metroidvania set on a crumbling world
                 at the edge of the galaxy. Set in a year so far removed from our own that 
                 our calendars hold no meaning, players will assume the roll of the Azema, the
                 last human being in the galaxy. <br></br></p>

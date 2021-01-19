@@ -7,10 +7,15 @@ body {
 .body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 0;
   margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .bgGroup {
@@ -22,20 +27,24 @@ body {
   z-index: -1;
   top: 0;
   left: 0;
+  padding: 0;
+  margin: 0;
   width: 100vw;
   height: 100vh;
 }
 
-.viewBorderTop .viewBorderBottom {
-  // position: absolute;
+.viewBorderTop,
+.viewBorderBottom {
+  position: fixed;
   background-color: black;
-  position: sticky;
-  opacity: 0.5;
+  opacity: 0.65;
   left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .viewBorderTop {
-  height: 70vh;
+  height: 55vh;
   top: 0;
   width: 100vw;
 }
@@ -47,19 +56,33 @@ body {
 }
 .bgImage {
   position: absolute;
-  top: 0;
-  left: 0;
+  overflow: hidden;
+  top: -50%;
+  left: -50%;
+  bottom: -50%;
+  right: -50%;
   min-width: 100vw;
   min-height: 100vh;
+  margin: auto;
+}
+
+.derelictStar {
+  margin-top: 2rem;
 }
 
 h3,
-p,
-Link,
-div {
+p {
   position: relative;
   z-index: 1;
   padding: 0 2rem;
+  margin: 0.5rem 0;
+}
+
+.scrollingText {
+  padding: 1rem;
+  max-width: 65vw;
+  // background-color: rgba(0, 0, 0, 0.65);
+  // border-radius: 20px;
 }
 
 .animatedIntro {
@@ -68,7 +91,8 @@ div {
   height: 100vh;
   width: 100vw;
   top: 0;
-  left: 0;
+  overflow: hidden;
+  //left: 0;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -127,16 +151,15 @@ div {
     height: 50vh;
   }
   51% {
-    opacity: 0;
     height: 170vh;
   }
-  65% {
+  60% {
     opacity: 0;
   }
-  66% {
+  61% {
     opacity: 1;
   }
-  90% {
+  75% {
     opacity: 1;
   }
   100% {
