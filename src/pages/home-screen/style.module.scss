@@ -1,14 +1,70 @@
 html,
 body {
   text-align: center;
-  background-color: black;
   color: white;
-  padding: 4rem;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.bgGroup {
+  position: absolute;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.viewBorderTop .viewBorderBottom {
+  // position: absolute;
+  background-color: black;
+  position: sticky;
+  opacity: 0.5;
+  left: 0;
+}
+
+.viewBorderTop {
+  height: 70vh;
+  top: 0;
+  width: 100vw;
+}
+
+.viewBorderBottom {
+  top: 80vh;
+  width: 100vw;
+  height: 20vh;
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+h3,
+p,
+Link,
+div {
+  position: relative;
+  z-index: 1;
+  padding: 0 2rem;
 }
 
 .animatedIntro {
   position: absolute;
-  z-index: 100;
+  z-index: -1;
   height: 100vh;
   width: 100vw;
   top: 0;
@@ -17,13 +73,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: blackbg1 9s;
+  animation: blackbg1 12s;
   opacity: 0;
 }
 
 #caretaker {
   overflow: hidden;
-  animation: caretaker1 6s;
+  animation: caretaker1 8s;
   opacity: 0;
   margin-top: 40vh;
   width: auto;
@@ -33,22 +89,24 @@ body {
 @keyframes blackbg1 {
   0% {
     opacity: 1;
+    z-index: 100;
   }
   68% {
     opacity: 1;
   }
   100% {
     opacity: 0;
+    z-index: 100;
   }
 }
 
 @keyframes caretaker1 {
   0% {
-    opacity: 0.1;
+    opacity: 0.2;
     height: 20vh;
   }
   10% {
-    opacity: 0.1;
+    opacity: 0.2;
   }
   25% {
     opacity: 0;
@@ -58,11 +116,11 @@ body {
     opacity: 0;
   }
   27% {
-    opacity: 0.2;
+    opacity: 0.4;
     height: 50vh;
   }
   35% {
-    opacity: 0.2;
+    opacity: 0.4;
   }
   50% {
     opacity: 0;
@@ -72,10 +130,10 @@ body {
     opacity: 0;
     height: 170vh;
   }
-  70% {
+  65% {
     opacity: 0;
   }
-  71% {
+  66% {
     opacity: 1;
   }
   90% {

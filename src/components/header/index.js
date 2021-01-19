@@ -4,8 +4,8 @@ import style from './style.module.scss';
 
 const Header = () => {
     return (
-        <div>
-            <img  className="header-back" href=""/>
+        <div className="header">
+            {/* <img  className="header-back" href=""/> */}
             <div className="hamburger-l">
                 <div className="left-screen">
                 </div>
