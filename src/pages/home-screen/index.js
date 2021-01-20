@@ -13,16 +13,19 @@ const HomeScreen = () => {
                 <div className={style.viewBorderTop}></div>
                 <div className={style.viewBorderBottom}></div>
             </div>
-            <img className={style.derelictStar} src={dsLogo} alt="Derelict Star (logo)" />
-            <h3 className={style.flavorText}>A world in the making<br></br>A world at the edge of destruction</h3>
-            <p className={style.scrollingText} >Derelict Star is a side-scrolling Metroidvania set on a crumbling world
-                at the edge of the galaxy. Set in a year so far removed from our own that 
-                our calendars hold no meaning, players will assume the roll of the Azema, the
-                last human being in the galaxy. <br></br></p>
-            {/* <Link to="/backstory">Backstory</Link> */}
-            <div className={style.animatedIntro}>
-                <img id={style.caretaker} src={caretaker} alt="A mysterious hooded alien holding an orb engulfed in flames"/>
+            <div className={style.centeredStuff}>
+                <img className={style.derelictStar} src={dsLogo} alt="Derelict Star (logo)" />
+                <h3 className={style.flavorText}>A world on the edge of destruction<br></br>guards a precious secret buried within</h3>
+                <p className={style.scrollingText} >Derelict Star is a side-scrolling Metroidvania set on a crumbling world
+                    at the edge of the galaxy. Set in a year so far removed from our own that 
+                    our calendars hold no meaning, players will assume the roll of the Azema, the
+                    last human being in the galaxy. <br></br></p>
+                {/* <Link to="/backstory">Backstory</Link> */}
+                <div className={style.animatedIntro}>
+                    <img id={style.caretaker} src={caretaker} alt="A mysterious hooded alien holding an orb engulfed in flames"/>
+                </div>
             </div>
+            
 
         </div>
     )

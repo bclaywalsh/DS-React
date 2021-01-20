@@ -29,36 +29,43 @@
 .lightButtonOn,
 .lightButtonOff {
   position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 101;
+  left: -60px;
+  top: -45px;
   // margin-top: -1.8vh;
   opacity: 1;
-  transform: scale(1.33);
+  transform: scale(1.5);
+}
+
+.lightButtonOff {
+  position: absolute;
+  z-index: 101;
 }
 
 .lightButtonOn {
   position: absolute;
-  z-index: 101;
-  animation: blink 1s;
-  animation-iteration-count: 3;
-  animation-fill-mode: forwards;
-  animation-delay: 10s;
+  z-index: 102;
+  opacity: 0.5;
+  transition: 0.2s;
+  // animation: blink 1s;
+  // animation-iteration-count: 3;
+  // animation-fill-mode: forwards;
+  // animation-delay: 10s;
 }
 
-.lightButtonOn:hover,
-.lightButtonOff:hover > .lightButtonOn {
-  opacity: 0.5;
+.lightButtonOn:hover {
+  opacity: 0.75;
 }
 .lightButtonOn:active {
   opacity: 1;
+  transition: 0;
 }
 
-.buttonsPanelGroup {
+.linksPanelGroup {
   padding: 2rem;
+  margin: 1rem;
   position: fixed;
-  z-index: 150;
-  margin-left: -500px;
+  z-index: 99;
+  left: 0;
   top: 30vh;
   // height: 50vh;
   // width: 10vw;
@@ -71,9 +78,20 @@
   font-size: 2rem;
   font-weight: 600;
 
-  animation: headerPanel1 1s;
-  animation-delay: 5s;
-  animation-fill-mode: forwards;
+  transition: 1s;
+  transform-origin: -1rem -1rem;
+  transform: rotate(90deg);
+  // animation: headerPanel1 1s;
+  // animation-delay: 5s;
+  // animation-fill-mode: forwards;
+}
+
+.navBar {
+  position: fixed;
+  bottom: 20px;
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
 }
 
 a {
@@ -90,26 +108,26 @@ a {
   }
 }
 
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  22% {
-    opacity: 0.5;
-  }
-  45% {
-    opacity: 0;
-  }
-  47% {
-    opacity: 0.5;
-  }
-  70% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+// @keyframes blink {
+//   0% {
+//     opacity: 0;
+//   }
+//   20% {
+//     opacity: 0;
+//   }
+//   22% {
+//     opacity: 0.5;
+//   }
+//   45% {
+//     opacity: 0;
+//   }
+//   47% {
+//     opacity: 0.5;
+//   }
+//   70% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }

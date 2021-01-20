@@ -13,13 +13,18 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 200vh;
+  width: 200vw;
   overflow: hidden;
 }
 
 .flavorText {
-  font-size: 1rem;
+  position: relative;
+  width: 50vw;
+  margin: auto;
+
+  margin-top: 3rem;
+  font-size: 2rem;
   font-style: italic;
   font-weight: 100;
   color: rgb(150, 225, 255);
@@ -36,8 +41,8 @@ body {
   left: 0;
   padding: 0;
   margin: 0;
-  width: 100vw;
-  height: 100vh;
+  // width: 100vw;
+  // height: 100vh;
 }
 
 .viewBorderTop,
@@ -51,35 +56,47 @@ body {
 }
 
 .viewBorderTop {
-  height: 55vh;
+  height: 65vh;
   top: 0;
   width: 100vw;
 }
 
 .viewBorderBottom {
-  top: 80vh;
+  top: 90vh;
   width: 100vw;
   height: 20vh;
 }
 .bgImage {
   position: absolute;
-  overflow: hidden;
-  top: -100%;
-  left: -100%;
-  bottom: -100%;
-  right: -100%;
+  //overflow: hidden;
+  // top: -100%;
+  // left: -100%;
+  // bottom: -100%;
+  // right: -100%;
+  top: 0;
+  left: 0;
   min-width: 200vw;
   min-height: 200vh;
   margin: auto;
+}
+
+.centeredStuff {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .derelictStar {
   margin-top: 4rem;
   position: relative;
   z-index: 20;
-  transform: scale(1.5);
-  min-width: 30vw;
-  max-width: 50vw;
+  transform: scale(2);
+  // min-width: 30vw;
+  // max-width: 200%;
 }
 
 h3,
@@ -88,10 +105,6 @@ p {
   z-index: 1;
   padding: 0 2rem;
   margin: 0.5rem 0;
-}
-
-h3 {
-  font-size: 5rem;
 }
 
 p {
@@ -106,7 +119,8 @@ p {
 }
 
 .animatedIntro {
-  position: absolute;
+  // position: absolute;
+  position: fixed;
   z-index: -1;
   height: 100vh;
   width: 100vw;
