@@ -74,17 +74,28 @@ body {
 }
 
 .derelictStar {
-  margin-top: 2rem;
+  margin-top: 4rem;
   position: relative;
   z-index: 20;
+  transform: scale(1.5);
+  min-width: 30vw;
+  max-width: 50vw;
 }
 
-h5,
+h3,
 p {
   position: relative;
   z-index: 1;
   padding: 0 2rem;
   margin: 0.5rem 0;
+}
+
+h3 {
+  font-size: 5rem;
+}
+
+p {
+  font-size: 2rem;
 }
 
 .scrollingText {
@@ -106,13 +117,13 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: blackbg1 12s;
+  animation: blackbg1 6s;
   opacity: 0;
 }
 
 #caretaker {
   overflow: hidden;
-  animation: caretaker1 8s;
+  animation: caretaker1 4s;
   opacity: 0;
   margin-top: 40vh;
   width: auto;
@@ -136,39 +147,46 @@ p {
 @keyframes caretaker1 {
   0% {
     opacity: 0.2;
-    height: 20vh;
+    height: 40vh;
   }
-  10% {
+  20% {
     opacity: 0.2;
   }
+  // 25% {
+  //   // opacity: 0;
+  //   height: 20vh;
+  // }
   25% {
+    height: 40vh;
     opacity: 0;
-    height: 20vh;
   }
   26% {
-    opacity: 0;
+    height: 40vh;
+    margin-left: 0;
   }
   27% {
-    opacity: 0.4;
-    height: 50vh;
+    height: 80vh;
+    margin-left: 10vw;
   }
-  35% {
+  28% {
     opacity: 0.4;
+    height: 80vh;
+    margin-left: 10vw;
+  }
+  41% {
+    opacity: 0;
+    height: 80vh;
+    margin-left: 10vw;
   }
   50% {
     opacity: 0;
-    height: 50vh;
+    height: 170vh;
+    margin-left: 0;
   }
   51% {
-    height: 170vh;
-  }
-  60% {
-    opacity: 0;
-  }
-  61% {
     opacity: 1;
   }
-  75% {
+  60% {
     opacity: 1;
   }
   100% {

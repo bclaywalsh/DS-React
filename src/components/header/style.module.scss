@@ -1,23 +1,115 @@
 .header {
   position: fixed;
-  z-index: 50;
+  z-index: 49;
   top: 0;
   left: 0;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0);
 }
 
-.panel,
-.lightButton {
+.panelGroup {
   position: fixed;
-  margin-left: -50px;
+  z-index: 50;
+  top: 40px;
+  left: 0;
+  margin-left: -500px;
   margin-top: -2vh;
-  transform: scale(0.9);
+  animation: headerPanel1 1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  max-width: 100vw;
+  max-height: 30vh;
+}
+
+.panel {
+  position: absolute;
+  left: 0;
+  top: 0;
   z-index: 51;
 }
 
-.lightButton {
-  z-index: 52;
-  margin-top: -1.2vh;
-  opacity: 0;
+.lightButtonOn,
+.lightButtonOff {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 101;
+  // margin-top: -1.8vh;
+  opacity: 1;
+  transform: scale(1.33);
+}
+
+.lightButtonOn {
+  position: absolute;
+  z-index: 101;
+  animation: blink 1s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+.lightButtonOn:hover,
+.lightButtonOff:hover > .lightButtonOn {
+  opacity: 0.5;
+}
+.lightButtonOn:active {
+  opacity: 1;
+}
+
+.buttonsPanelGroup {
+  padding: 2rem;
+  position: fixed;
+  z-index: 150;
+  margin-left: -500px;
+  top: 30vh;
+  // height: 50vh;
+  // width: 10vw;
+  color: white;
+  background-color: rgba(0, 97, 114, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 2rem;
+  font-weight: 600;
+
+  animation: headerPanel1 1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes headerPanel1 {
+  0% {
+    margin-left: -500px;
+  }
+  100% {
+    margin-left: -10px;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  22% {
+    opacity: 0.5;
+  }
+  45% {
+    opacity: 0;
+  }
+  47% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
