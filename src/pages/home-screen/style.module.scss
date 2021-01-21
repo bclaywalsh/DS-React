@@ -20,11 +20,12 @@ body {
 
 .flavorText {
   position: relative;
+  z-index: 10;
   width: 50vw;
   margin: auto;
 
   margin-top: 3rem;
-  font-size: 2rem;
+  font-size: 1rem;
   font-style: italic;
   font-weight: 100;
   color: rgb(150, 225, 255);
@@ -45,27 +46,35 @@ body {
   // height: 100vh;
 }
 
-.viewBorderTop,
-.viewBorderBottom {
-  position: fixed;
-  background-color: black;
-  opacity: 0.65;
-  left: 0;
-  padding: 0;
-  margin: 0;
+.carrier {
+  position: absolute;
+  transform: rotate(-20deg);
+  top: 160vh;
+  left: 160vw;
+  z-index: 0;
 }
+// .viewBorderTop,
+// .viewBorderBottom {
+//   position: fixed;
+//   background-color: black;
+//   opacity: 0.65;
+//   left: 0;
+//   padding: 0;
+//   margin: 0;
+//   z-index: 1;
+// }
 
-.viewBorderTop {
-  height: 65vh;
-  top: 0;
-  width: 100vw;
-}
+// .viewBorderTop {
+//   height: 65vh;
+//   top: 0;
+//   width: 100vw;
+// }
 
-.viewBorderBottom {
-  top: 90vh;
-  width: 100vw;
-  height: 20vh;
-}
+// .viewBorderBottom {
+//   top: 90vh;
+//   width: 100vw;
+//   height: 20vh;
+// }
 .bgImage {
   position: absolute;
   //overflow: hidden;
@@ -82,6 +91,7 @@ body {
 
 .centeredStuff {
   position: fixed;
+  z-index: 12;
   width: 100vw;
   top: 0;
   left: 0;
@@ -93,8 +103,8 @@ body {
 .derelictStar {
   margin-top: 4rem;
   position: relative;
-  z-index: 20;
-  transform: scale(2);
+  z-index: 10;
+  transform: scale(1.5);
   // min-width: 30vw;
   // max-width: 200%;
 }
@@ -102,13 +112,13 @@ body {
 h3,
 p {
   position: relative;
-  z-index: 1;
+  z-index: 10;
   padding: 0 2rem;
   margin: 0.5rem 0;
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .scrollingText {
@@ -121,7 +131,7 @@ p {
 .animatedIntro {
   // position: absolute;
   position: fixed;
-  z-index: -1;
+  z-index: 99;
   height: 100vh;
   width: 100vw;
   top: 0;
@@ -138,6 +148,7 @@ p {
 #caretaker {
   overflow: hidden;
   animation: caretaker1 4s;
+  animation-timing-function: linear;
   opacity: 0;
   margin-top: 40vh;
   width: auto;
@@ -163,44 +174,30 @@ p {
     opacity: 0.2;
     height: 40vh;
   }
-  20% {
+  25% {
     opacity: 0.2;
   }
   // 25% {
   //   // opacity: 0;
   //   height: 20vh;
   // }
-  25% {
-    height: 40vh;
-    opacity: 0;
-  }
-  26% {
-    height: 40vh;
-    margin-left: 0;
-  }
-  27% {
-    height: 80vh;
-    margin-left: 10vw;
-  }
-  28% {
-    opacity: 0.4;
-    height: 80vh;
-    margin-left: 10vw;
-  }
-  41% {
-    opacity: 0;
-    height: 80vh;
-    margin-left: 10vw;
-  }
   50% {
+    height: 40vh;
     opacity: 0;
-    height: 170vh;
-    margin-left: 0;
   }
   51% {
-    opacity: 1;
+    opacity: 0.4;
+    height: 80vh;
   }
-  60% {
+  61% {
+    opacity: 0;
+    height: 80vh;
+  }
+  62% {
+    opacity: 1;
+    height: 170vh;
+  }
+  75% {
     opacity: 1;
   }
   100% {

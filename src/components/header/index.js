@@ -14,10 +14,15 @@ const Header = () => {
 
     return (
         <div className={style.header}>
+            <div className={style.viewBorders}>
+                <div className={style.viewBorderTop}></div>
+                <div className={style.viewBorderBottom}></div>
+            </div>
             <div className={style.panelGroup}>
                 <img className={style.panel} src={dsPanel1} alt="Derelict Star (logo)" />
-                <img className={style.lightButtonOff} src={greenOff} alt="Derelict Star (logo)" />
-                <img className={style.lightButtonOn} src={greenOn} alt="Derelict Star (logo)" />
+                <p className={style.digitalText}>□ ACCESSING INTERNAL DATABASE . . .</p>
+                <img className={style.lightButtonOff} src={greenOff} alt="A dark glass button" />
+                <img className={style.lightButtonOn} src={greenOn} alt="A lit up button" />
             </div>
             <div className={style.linksPanelGroup}>
                 {/* <img className={style.buttonsPanel} src={dsPanel1} alt="Derelict Star (logo)" /> */}

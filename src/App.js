@@ -21,7 +21,7 @@ const App = () => {
     <div>
       <Header />
       <BrowserRouter>
-      <PageSwitch />
+        <PageSwitch />
       </BrowserRouter>
     </div>
   )
