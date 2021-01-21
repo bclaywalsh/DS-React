@@ -24,7 +24,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  // z-index: 12;
 }
 
 .digitalText {
@@ -34,8 +33,8 @@
   width: 8rem;
   height: 6rem;
   overflow: auto;
+  opacity: 0.5;
   font-size: 1.5rem;
-  // font-weight: 100;
   color: rgb(139, 238, 255);
   font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
@@ -56,10 +55,12 @@
 }
 
 .lightButtonOn {
+  padding: 0;
   position: absolute;
   // z-index: 102;
   opacity: 0.5;
   transition: 0.2s;
+  opacity: 0;
   // animation: blink 1s;
   // animation-iteration-count: 3;
   // animation-fill-mode: forwards;
