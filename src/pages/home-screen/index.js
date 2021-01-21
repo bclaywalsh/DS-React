@@ -18,8 +18,8 @@ const HomeScreen = () => {
                 <h3 className={style.flavorText}>A world on the edge of destruction<br></br>guards a precious secret deep within</h3>
                 <p className={style.scrollingText} >Derelict Star is a side-scrolling Metroidvania set on a crumbling world
                     at the edge of the galaxy. Set in a year so far removed from our own that 
-                    our calendars hold no meaning, players will assume the roll of the Azema, the
-                    last human being in the galaxy. <br></br></p>
+                    our calendars hold no meaning, players will assume the roll of Azema, the
+                    last human. <br></br></p>
                 {/* <Link to="/backstory">Backstory</Link> */}
                 <div className={style.animatedIntro}>
                     <img id={style.caretaker} src={caretaker} alt="A mysterious hooded alien holding an orb engulfed in flames"/>
