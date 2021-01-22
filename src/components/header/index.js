@@ -28,33 +28,19 @@ const Header = () => {
 
     return (
         <div className={style.header}>
-            {/* <div className={style.viewBorders}>
-                <div className={style.viewBorderTop}></div>
-                <div className={style.viewBorderBottom}></div>
-            </div> */}
             <div className={style.panelGroup}>
                 <img className={style.panel} src={dsPanel1} alt="Machine Panel" />
                 <p className={style.digitalText}>□  ACCESSING INTERNAL DATABASE . . .</p>
                 <img className={style.lightButtonOff} src={greenOff} alt="A dark glass button" />
                 {/* <img className={style.lightButtonOn} src={greenOn} alt="A lit up button" /> */}
                 {/* ToggleNavBar(); */}
-                <img src={greenOn} alt="A lit up button"  onClick={() => setNav(!isNavOpen)} className={style.lightButtonOn} >
+                <img src={greenOn} alt="A lit button"  className={style.lightButtonOn} 
+                onClick={() => {
+                    setNav(!isNavOpen)}
+                    }  >
                 </img>
                 {isNavOpen && renderNavItems()}
             </div>
-            {/* <div className={style.linksPanelGroup}>
-                <a href="/backstory">Then</a>
-                <a href="/backstory">Now</a>
-                <a href="/backstory">Gameplay</a>
-                <a href="/backstory">Gear</a>
-                <a href="/backstory">Gallery</a>
-
-            </div> */}
-            {/* <div className={style.navBar}>
-                <a href="/backstory">Contact</a>
-                <a href="/backstory">Gameplay</a>
-                <a href="/backstory">Gallery</a>
-            </div> */}
         </div>
     )
 }

@@ -6,9 +6,10 @@ const Footer = () => {
     return (
         <div className={style.navBar}>
             <a href="/">Home</a>
-            <a href="/backstory">Gameplay</a>
-            <a href="/backstory">Gallery</a>
-            <a href="/backstory">Contact</a>
+            <a href="/backstory">History</a>
+            <a href="/gameplay">Gameplay</a>
+            <a href="/gallery">Gallery</a>
+            <a href="/about">Contact</a>
         </div>
     )
 }

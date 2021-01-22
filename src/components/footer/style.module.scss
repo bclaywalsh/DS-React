@@ -6,3 +6,12 @@
   width: 100vw;
   justify-content: space-around;
 }
+
+a {
+  color: gray;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}

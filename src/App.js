@@ -36,7 +36,7 @@ const App = () => {
       </BrowserRouter>
       <Header />
       <Footer />
-      <Cutscene/>
+      {/* <Cutscene/> */}
     </div>
   )
 }
