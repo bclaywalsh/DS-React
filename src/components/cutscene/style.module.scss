@@ -1,0 +1,82 @@
+.animatedIntro {
+  // position: absolute;
+  position: fixed;
+  z-index: -2;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  overflow: hidden;
+  //left: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: blackbg1 6s;
+  opacity: 0;
+}
+
+#caretaker {
+  overflow: hidden;
+  animation: caretaker1 4s;
+  animation-timing-function: linear;
+  opacity: 0;
+  margin-top: 40vh;
+  width: auto;
+  height: 10vh;
+}
+
+@keyframes blackbg1 {
+  0% {
+    opacity: 1;
+    z-index: 100;
+  }
+  68% {
+    opacity: 1;
+  }
+  99% {
+    z-index: 100;
+    top: 0;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+    top: 100vh;
+  }
+}
+
+@keyframes caretaker1 {
+  0% {
+    opacity: 0.2;
+    height: 40vh;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  // 25% {
+  //   // opacity: 0;
+  //   height: 20vh;
+  // }
+  50% {
+    height: 40vh;
+    opacity: 0;
+  }
+  51% {
+    opacity: 0.4;
+    height: 80vh;
+  }
+  61% {
+    opacity: 0;
+    height: 80vh;
+  }
+  62% {
+    opacity: 1;
+    height: 170vh;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    height: 170vh;
+  }
+}

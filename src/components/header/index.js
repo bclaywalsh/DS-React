@@ -17,30 +17,29 @@ const Header = () => {
     const renderNavItems = () => (
         <div className={style.linksPanelGroup}>
             {/* <img className={style.buttonsPanel} src={dsPanel1} alt="Derelict Star (logo)" /> */}
+            <a href="/">Home</a>
             <a href="/backstory">Then</a>
-            <a href="/backstory">Now</a>
-            <a href="/backstory">Gameplay</a>
-            <a href="/backstory">Gear</a>
-            <a href="/backstory">Gallery</a>
+            <a href="/presentDay">Now</a>
+            <a href="/gameplay">Gameplay</a>
+            <a href="/armory">Armory</a>
+            <a href="/gallery">Gallery</a>
         </div>
     )
 
     return (
         <div className={style.header}>
-            <div className={style.viewBorders}>
+            {/* <div className={style.viewBorders}>
                 <div className={style.viewBorderTop}></div>
                 <div className={style.viewBorderBottom}></div>
-            </div>
+            </div> */}
             <div className={style.panelGroup}>
                 <img className={style.panel} src={dsPanel1} alt="Machine Panel" />
                 <p className={style.digitalText}>□  ACCESSING INTERNAL DATABASE . . .</p>
                 <img className={style.lightButtonOff} src={greenOff} alt="A dark glass button" />
                 {/* <img className={style.lightButtonOn} src={greenOn} alt="A lit up button" /> */}
                 {/* ToggleNavBar(); */}
-                <button onClick={() => setNav(!isNavOpen)} className={style.lightButtonOn} >
-                    {/* {buttonText} */}
-                    <img src={greenOn} alt="A lit up button" />
-                </button>
+                <img src={greenOn} alt="A lit up button"  onClick={() => setNav(!isNavOpen)} className={style.lightButtonOn} >
+                </img>
                 {isNavOpen && renderNavItems()}
             </div>
             {/* <div className={style.linksPanelGroup}>
@@ -51,11 +50,11 @@ const Header = () => {
                 <a href="/backstory">Gallery</a>
 
             </div> */}
-            <div className={style.navBar}>
+            {/* <div className={style.navBar}>
                 <a href="/backstory">Contact</a>
                 <a href="/backstory">Gameplay</a>
                 <a href="/backstory">Gallery</a>
-            </div>
+            </div> */}
         </div>
     )
 }

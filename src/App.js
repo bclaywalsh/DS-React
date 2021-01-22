@@ -11,6 +11,9 @@ import Gallery from './pages/gallery-screen';
 // import logo from './logo.svg';
 import './App.css';
 import Header from './components/header';
+import Footer from './components/footer';
+import BGView from './components/bgview';
+import Cutscene from './components/cutscene';
 
 const App = () => {
   const PageSwitch = () => (
@@ -27,10 +30,13 @@ const App = () => {
 
   return (
     <div>
-      <Header />
+      <BGView/>
       <BrowserRouter>
         <PageSwitch />
       </BrowserRouter>
+      <Header />
+      <Footer />
+      <Cutscene/>
     </div>
   )
 }

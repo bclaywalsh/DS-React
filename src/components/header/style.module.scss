@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  // z-index: 11;
+  z-index: 20;
   top: 0;
   left: 0;
 }
@@ -50,13 +50,11 @@
 }
 
 .lightButtonOff {
-  position: absolute;
   // z-index: 101;
 }
 
 .lightButtonOn {
   padding: 0;
-  position: absolute;
   // z-index: 102;
   opacity: 0.5;
   transition: 0.2s;
@@ -101,14 +99,14 @@
   // animation-fill-mode: forwards;
 }
 
-.navBar {
-  position: fixed;
-  z-index: 13;
-  bottom: 20px;
-  display: flex;
-  width: 100vw;
-  justify-content: space-around;
-}
+// .navBar {
+//   position: fixed;
+//   z-index: 13;
+//   bottom: 20px;
+//   display: flex;
+//   width: 100vw;
+//   justify-content: space-around;
+// }
 
 a {
   text-decoration: none;
@@ -120,27 +118,27 @@ a {
   z-index: 3;
 }
 
-.viewBorderTop,
-.viewBorderBottom {
-  position: fixed;
-  background-color: black;
-  opacity: 0.65;
-  left: 0;
-  padding: 0;
-  margin: 0;
-}
+// .viewBorderTop,
+// .viewBorderBottom {
+//   position: fixed;
+//   background-color: black;
+//   opacity: 0.65;
+//   left: 0;
+//   padding: 0;
+//   margin: 0;
+// }
 
-.viewBorderTop {
-  height: 65vh;
-  top: 0;
-  width: 100vw;
-}
+// .viewBorderTop {
+//   height: 65vh;
+//   top: 0;
+//   width: 100vw;
+// }
 
-.viewBorderBottom {
-  top: 90vh;
-  width: 100vw;
-  height: 20vh;
-}
+// .viewBorderBottom {
+//   top: 90vh;
+//   width: 100vw;
+//   height: 20vh;
+// }
 
 @keyframes headerPanel1 {
   0% {

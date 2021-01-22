@@ -21,9 +21,9 @@ const HomeScreen = () => {
                     our calendars hold no meaning, players will assume the roll of Azema, the
                     last human. <br></br></p>
                 {/* <Link to="/backstory">Backstory</Link> */}
-                <div className={style.animatedIntro}>
+                {/* <div className={style.animatedIntro}>
                     <img id={style.caretaker} src={caretaker} alt="A mysterious hooded alien holding an orb engulfed in flames"/>
-                </div>
+                </div> */}
             </div>
             
 

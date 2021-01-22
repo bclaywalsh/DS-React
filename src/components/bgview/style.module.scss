@@ -1,0 +1,21 @@
+.viewBorderTop,
+.viewBorderBottom {
+  position: fixed;
+  background-color: black;
+  opacity: 0.65;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.viewBorderTop {
+  height: 65vh;
+  top: 0;
+  width: 100vw;
+}
+
+.viewBorderBottom {
+  top: 90vh;
+  width: 100vw;
+  height: 20vh;
+}
