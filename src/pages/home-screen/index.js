@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import caretaker from './Caretaker_1b.png';
 import dsLogo from './DerelictStarBlue4.png';
 import bgImage from './ATMA_TitleRainbow_FULL.png';
@@ -24,7 +24,6 @@ const HomeScreen = () => {
                     our calendars hold no meaning, players will assume the roll of Azema, the
                     last human. <br></br><br></br>Within the heart of a crumbling world lies a dark secret, demanding revelation.
                     <br></br>Which secrets will you unearth? What path shall you walk?</p>
-                {/* <Link to="/backstory">Backstory</Link> */}
                 <div className={style.animatedIntro}>
                     <img id={style.caretaker} src={caretaker} alt="A mysterious hooded alien holding an orb engulfed in flames"/>
                 </div>

@@ -10,11 +10,14 @@ body {
   align-items: center;
   padding: 0;
   margin: 0;
+  // background-image: url("./ATMA_TitleRainbow_FULL.png");
+  // background-position: center;
+  // background-size: 200%;
   // position: absolute;
   top: 0;
   left: 0;
-  height: 200vh;
-  width: 200vw;
+  // height: 200vh;
+  // width: 200vw;
 }
 
 .flavorText {
@@ -69,6 +72,7 @@ body {
 
 .maze {
   position: absolute;
+  z-index: 10;
   opacity: 0.1;
   transform: scale(2.2);
   margin-top: 12%;
@@ -141,6 +145,7 @@ p {
   justify-content: center;
   align-items: center;
   animation: blackbg1 6s;
+  animation-fill-mode: forwards;
   opacity: 0;
 }
 
@@ -165,11 +170,15 @@ p {
   99% {
     z-index: 100;
     top: 0;
+    height: 100vh;
+    width: 100vw;
   }
   100% {
     opacity: 0;
     z-index: -2;
     top: 100vh;
+    width: 0;
+    height: 0;
   }
 }
 
