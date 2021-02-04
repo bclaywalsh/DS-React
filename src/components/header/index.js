@@ -20,13 +20,13 @@ const Header = () => {
     const linksDivOpen = {
         transform: 'rotate(0deg)',
         padding: '2rem',
-        margin: '1rem',
+        //margin: '1rem',
         position: 'fixed',
         zIndex: '99',
         left: '0',
         top: '254px',
         color: 'white',
-        backgroundColor: 'rgba(0, 97, 114, 0.65)',
+        //backgroundColor: 'rgba(0, 97, 114, 0.65)',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'flex-start',
@@ -39,13 +39,13 @@ const Header = () => {
     const linksDivClosed = {
         transform: 'rotate(90deg)',
         padding: '2rem',
-        margin: '1rem',
+        //margin: '1rem',
         position: 'fixed',
         zIndex: '99',
         left: '0',
         top: '254px',
         color: 'white',
-        backgroundColor: 'rgba(0, 97, 114, 0.65)',
+        //backgroundColor: 'rgba(0, 97, 114, 0.65)',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'flex-start',
@@ -60,13 +60,15 @@ const Header = () => {
         return (
             <div style={isNavOpen ? linksDivClosed:linksDivOpen} className={generalStyle.linksPanelGroup}>
                 <img className={generalStyle.panel2} src={dsPanel2} alt="Machine Panel" />
+                <ol className={generalStyle.textgroup1}>
 
-                <a href="/">Home</a>
-                <a href="/backstory">Then</a>
-                <a href="/presentDay">Now</a>
-                <a href="/gameplay">Gameplay</a>
-                <a href="/armory">Armory</a>
-                <a href="/gallery">Gallery</a>
+                    <a href="/">Home</a>
+                    <a href="/backstory">Then</a>
+                    <a href="/presentDay">Now</a>
+                    <a href="/gameplay">Gameplay</a>
+                    <a href="/armory">Armory</a>
+                    <a href="/gallery">Gallery</a>
+                </ol>
             </div>
         )
     }
