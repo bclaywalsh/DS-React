@@ -17,7 +17,7 @@ const BackstoryScreen = () => {
                 <li>-1,383 : Xen-Seti laced colonial worlds one-by-one begin going dark. All human life on these worlds vanishes.</li>
                 <li>-1,209 : The Xen-Seti begin appearing on worlds in which they were previously not present. War is declared on the threat. The reagency offers no aid.</li>
                 <li>-1,030 : Human dominance over the galaxy is broken. Humans begin retracting deeper and deeper into their own territory, but always the Xen-Seti appear.</li>
-                <li>-670 : All trace of human life dissapears.</li>
+                <li>-670 : The human home system is invaded. All trace of human life dissapears.</li>
             </article>
         </div>
     )

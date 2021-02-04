@@ -1,6 +1,7 @@
 import React from 'react';
 import generalStyle from './style.module.scss';
 import dsPanel1 from './ds-react-panel1.png';
+import dsPanel2 from './ds-react-art2.png';
 import greenOff from './greenOff.png';
 import greenOn from './greenOn.png';
 import { useState } from 'react';
@@ -58,6 +59,8 @@ const Header = () => {
     const linksPanel = () => {
         return (
             <div style={isNavOpen ? linksDivClosed:linksDivOpen} className={generalStyle.linksPanelGroup}>
+                <img className={generalStyle.panel2} src={dsPanel2} alt="Machine Panel" />
+
                 <a href="/">Home</a>
                 <a href="/backstory">Then</a>
                 <a href="/presentDay">Now</a>
